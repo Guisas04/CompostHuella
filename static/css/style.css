@@ -11,6 +11,13 @@ body {
     flex-direction: column;
 }
 
+#map {
+    height: 80%; 
+    width: 80%;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
 .gochi-hand-regular {
     font-family: "Gochi Hand", serif;
     font-weight: 400;
