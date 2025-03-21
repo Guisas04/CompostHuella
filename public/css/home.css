@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #004F1C;
+    --secondary-color: #7C3B58;
+    --background-color: #f8f9fa;
+    --nav-height: 72px;
+    --hero-overlay: rgba(0, 79, 28, 0.9);
+}
+
+@font-face {
+    font-family: 'Ramona-Bold';
+    src: url('../assets/Ramona-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ramona-Light';
+    src: url('../assets/Ramona-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Coolvetica-Regular';
+    src: url('../assets/Coolvetica-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+main {
+    margin-top: 4.5rem;
+}
+
+.hero-section {
+    background: url('../assets/folhas.png') center/cover no-repeat;
+    min-height: calc(100vh - var(--nav-height));
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 8px;
+    color: black;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+
+    h1 {
+        font-family: "Ramona-Bold", Arial, sans-serif;
+        font-size: clamp(2.5rem, 8vw, 5.5rem);
+        line-height: 1.2;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        -webkit-text-stroke: 0.5rem white;
+        paint-order: stroke fill;
+    }
+
+    a {
+        font-family: "Coolvetica-Regular", Arial, sans-serif;
+        font-size: clamp(1.5rem, 2vw, 1.5rem);
+        color: #3E3D40;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        background-color: #97BF0D;
+        height: 4.5rem;
+        width: 12rem;
+        border-radius: 15px;
+
+        &:hover {
+            color: #3E3D40;
+        }
+    }
+
+    p {
+        font-family: "Ramona-Light", Arial, sans-serif;
+        font-size: clamp(1.25rem, 3vw, 1.75rem);
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        -webkit-text-stroke: 0.3rem white;
+        paint-order: stroke fill;
+    }
+}
+
+.angled-section {
+    background: #97BF0D;
+    transform: skewY(-4.77deg);
+    margin: 4rem 0;
+    padding: 4rem 0;
+    height: 665.57px;
+}
+
+.angled-content {
+    transform: skewY(4.77deg);
+}
+
+.registration {
+    background: url('forest-bg.jpg') center/cover no-repeat;
+    padding: 4rem 0;
+    color: white;
+}
+
+.registration .container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .angled-section {
+        margin: 2rem 0;
+        padding: 2rem 0;
+    }
+    
+    .registration {
+        padding: 2rem 0;
+    }
+}
