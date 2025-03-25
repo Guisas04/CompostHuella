@@ -13,31 +13,31 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname, '../public')));
 
-app.get('/', (req, res) => {
+app.get('/', (_req, res) => {
   res.send(Index());
 });
 
-app.get('/map', (req, res) => {
+app.get('/map', (_req, res) => {
   res.send(Map());
 });
 
-app.get('/info', (req, res) => {
+app.get('/info', (_req, res) => {
   res.send(Info());
 });
 
-app.get('/formacoes', (req, res) => {
+app.get('/formacoes', (_req, res) => {
   res.send(Formacoes());
 });
 
-app.get('/login', (req, res) => {
+app.get('/login', (_req, res) => {
   res.send(Login());
 });
 
-app.get('/registar', (req, res) => {
+app.get('/registar', (_req, res) => {
   res.send(Registar());
 });
 
-app.get('/dashboard', (req, res) => {
+app.get('/dashboard', (_req, res) => {
   res.send(Dashboard());
 });
 

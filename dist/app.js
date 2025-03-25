@@ -15,25 +15,25 @@ const registar_1 = require("./pages/registar");
 const app = (0, express_1.default)();
 const PORT = process.env.PORT || 3000;
 app.use(express_1.default.static(path_1.default.join(__dirname, '../public')));
-app.get('/', (req, res) => {
+app.get('/', (_req, res) => {
     res.send((0, index_1.Index)());
 });
-app.get('/map', (req, res) => {
+app.get('/map', (_req, res) => {
     res.send((0, map_1.Map)());
 });
-app.get('/info', (req, res) => {
+app.get('/info', (_req, res) => {
     res.send((0, info_1.Info)());
 });
-app.get('/formacoes', (req, res) => {
+app.get('/formacoes', (_req, res) => {
     res.send((0, formacoes_1.Formacoes)());
 });
-app.get('/login', (req, res) => {
+app.get('/login', (_req, res) => {
     res.send((0, login_1.Login)());
 });
-app.get('/registar', (req, res) => {
+app.get('/registar', (_req, res) => {
     res.send((0, registar_1.Registar)());
 });
-app.get('/dashboard', (req, res) => {
+app.get('/dashboard', (_req, res) => {
     res.send((0, dashboard_1.Dashboard)());
 });
 app.listen(PORT, () => {

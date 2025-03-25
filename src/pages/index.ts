@@ -24,35 +24,46 @@ export const Index = (): string => {
         
         <body>
             ${Navbar()}
-            
             <main>
                 <section class="hero-section">
-                    <div class="container h-100 d-flex">
-                        <header class="hero-content text-center m-auto"> <!-- Changed here -->
+                    <div class="fluid-container h-100 d-flex">
+                        <header class="hero-content text-center m-auto"> 
                             <h1>COMEÇA JÁ <br>A COMPOSTAR</h1>
                             <p>Reciclar resíduos orgânicos</p>
-                            <a href="#" class="btn btn-success">Aprende como</a>
+                            <a href="#form" class="btn btn-success">Aprende como</a>
                         </header>
                     </div>
                 </section>
-        
-                <section class="angled-section">
-                    <div class="container angled-content text-center text-white">
-                        <h2>Benefícios da Compostagem</h2>
-                        <p>Fica a saber os benefícios da compostagem neste vídeo informativo.</p>
-                        <img src="compost-video-thumbnail.jpg" alt="Compost Video" class="img-fluid">
+
+                <!-- HUELLA 2030 -->        
+                <section class="angled-section first-section fluid-container d-flex">
+                    <div class="angled-content fluid-container text-center d-flex">
+                        <div class="fluid-container texto align-self-center">
+                            <h2>HUELLA 2030</h2>
+                            <p>Um compostor <b>inteligente</b>, <br> <b>comunitário</b> e <b>sustentável</b></p>
+                        </div>
+                        <div class="img-bg fluid-container d-flex">
+                            <img class="img-compostor align-self-center" src="/assets/first-section-compostor.png" alt="Compostor">
+                        </div>
+                    </div>
+                </section>
+                 
+                <!-- Objetivos  -->
+                <section class="angled-section second-section container-fluid d-flex">
+                    <div class="angled-content container-fluid text-center d-flex">
+                        <div class="img-bg fluid-container d-flex">
+                            <img class="img-compostor align-self-center" src="/assets/first-section-compostor.png" alt="Compostor">
+                        </div>
+                        <div class="fluid-container-white texto align-self-center">
+                            <h2>OBJETIVOS SUSTENTÁVEIS</h2>
+                            <p>Dimensão <b>ambiental</b> Dimensão <b>económica</b> Dimensão <b>tecnológica</b> Dimensão <b>socioeducativa</b> Dimensão <b>política</b></p>
+                        </div>
                     </div>
                 </section>
 
-                <section class="angled-section">
-                    <div class="container angled-content text-center text-white">
-                        <h2>Benefícios da Compostagem</h2>
-                        <p>Fica a saber os benefícios da compostagem neste vídeo informativo.</p>
-                        <img src="compost-video-thumbnail.jpg" alt="Compost Video" class="img-fluid">
-                    </div>
-                </section>
-        
-                <section class="registration py-5">
+            
+                <!--  -->
+                <section class="registration py-5" id="form">
                     <div class="container">
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
