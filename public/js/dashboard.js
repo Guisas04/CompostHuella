@@ -3,19 +3,44 @@ const ctx = document.getElementById('wasteChart').getContext('2d');
 new Chart(ctx, {
     type: 'line',
     data: {
-        labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'],
+        labels: ['9 Março', '10 Março', '13 Março', '14 Março', '15 Março', '17 Março'],
         datasets: [{
-            label: 'Kg de Lixo Depositado',
-            data: [65, 59, 80, 81, 56, 55],
-            borderColor: '#2e7d32',
+            label: 'O2 (PPB)',
+            data: [13, 14, 10, 11, 12, 10],
+            borderColor: '#96a1ff',
             backgroundColor: 'rgba(46, 125, 50, 0.05)',
             tension: 0.4,
             fill: true,
             pointBackgroundColor: '#fff',
-            pointBorderColor: '#2e7d32',
+            pointBorderColor: '#96a1ff',
             pointRadius: 5,
             pointHoverRadius: 7
-        }]
+        },
+        {
+            label: 'Temp (ºC)',
+            data: [13.1, 13.7, 15.1, 14.2, 15.7, 14.5],
+            borderColor: '#f5457f',
+            backgroundColor: 'rgba(46, 125, 50, 0.05)',
+            tension: 0.4,
+            fill: true,
+            pointBackgroundColor: '#fff',
+            pointBorderColor: '#f5457f',
+            pointRadius: 5,
+            pointHoverRadius: 7
+        },
+        {
+            label: 'Hum (%)',
+            data: [24, 23, 26, 24, 27, 25],
+            borderColor: '#787878',
+            backgroundColor: 'rgba(46, 125, 50, 0.05)',
+            tension: 0.4,
+            fill: true,
+            pointBackgroundColor: '#fff',
+            pointBorderColor: '#787878',
+            pointRadius: 5,
+            pointHoverRadius: 7
+        }
+    ]
     },
     options: {
         responsive: true,
@@ -40,7 +65,7 @@ new Chart(ctx, {
                 },
                 title: {
                     display: true,
-                    text: 'Kilogramas',
+                    text: 'Nivel',
                     color: '#666'
                 }
             },

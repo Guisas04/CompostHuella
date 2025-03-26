@@ -6,7 +6,6 @@ import { Info } from './pages/info';
 import { Formacoes } from './pages/formacoes';
 import { Dashboard } from './pages/dashboard';
 import { Login } from './pages/login';
-import { Registar } from './pages/registar';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -31,10 +30,6 @@ app.get('/formacoes', (_req, res) => {
 
 app.get('/login', (_req, res) => {
   res.send(Login());
-});
-
-app.get('/registar', (_req, res) => {
-  res.send(Registar());
 });
 
 app.get('/dashboard', (_req, res) => {

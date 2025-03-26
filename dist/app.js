@@ -11,7 +11,6 @@ const info_1 = require("./pages/info");
 const formacoes_1 = require("./pages/formacoes");
 const dashboard_1 = require("./pages/dashboard");
 const login_1 = require("./pages/login");
-const registar_1 = require("./pages/registar");
 const app = (0, express_1.default)();
 const PORT = process.env.PORT || 3000;
 app.use(express_1.default.static(path_1.default.join(__dirname, '../public')));
@@ -29,9 +28,6 @@ app.get('/formacoes', (_req, res) => {
 });
 app.get('/login', (_req, res) => {
     res.send((0, login_1.Login)());
-});
-app.get('/registar', (_req, res) => {
-    res.send((0, registar_1.Registar)());
 });
 app.get('/dashboard', (_req, res) => {
     res.send((0, dashboard_1.Dashboard)());

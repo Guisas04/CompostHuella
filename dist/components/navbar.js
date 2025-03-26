@@ -33,7 +33,7 @@ const Navbar = () => {
                                 Informações
                             </a>
                         </li>                        
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown" id="loginDropdown">
                             <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="dropdownMenu" role="button" data-toggle="dropdown">
                                 <i class="fa-solid fa-right-to-bracket mr-2"></i>
                                 Login
@@ -63,7 +63,7 @@ const Navbar = () => {
                             </div>
                         </li>
 
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown" id="accountDropdown">
                             <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="dropdownMenu" role="button" data-toggle="dropdown">
                                 <i class="fa-regular fa-circle-user mr-2"></i>
                                 Conta
@@ -75,7 +75,7 @@ const Navbar = () => {
                                 <a class="dropdown-item" href="/dashboard">
                                     <i class="fas fa-chart-line mr-2"></i>Dashboard
                                 </a>
-                                <a class="dropdown-item text-danger" href="#" id="logoutButton">
+                                <a class="dropdown-item text-danger" href="#">
                                     <i class="fas fa-sign-out-alt mr-2"></i>Terminar Sessão
                                 </a>
                             </div>
@@ -83,6 +83,7 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
+            <script src="/js/login.js"></script>
         </nav>
     `;
 };
