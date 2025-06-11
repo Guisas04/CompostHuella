@@ -18,7 +18,7 @@ new Chart(ctx, {
         },
         {
             label: 'Temp (ºC)',
-            data: [13.1, 13.7, 15.1, 14.2, 15.7, 14.5],
+            data: [15.3, 13.7, 15.1, 14.2, 15.7, 14.5],
             borderColor: '#f5457f',
             backgroundColor: 'rgba(46, 125, 50, 0.05)',
             tension: 0.4,
@@ -40,7 +40,7 @@ new Chart(ctx, {
             pointRadius: 5,
             pointHoverRadius: 7
         }
-    ]
+        ]
     },
     options: {
         responsive: true,

@@ -2,7 +2,7 @@
     --primary-color: #004F1C;
     --secondary-color: #7C3B58;
     --background-color: #f8f9fa;
-    --nav-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    --nav-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
 }
 
@@ -25,7 +25,7 @@
 .navbar-custom {
     background: var(--primary-color) !important;
     padding: 0;
-    
+
     & .navbar-brand img {
         height: 55px;
         width: auto;
@@ -48,7 +48,7 @@
         display: flex;
         align-items: center;
         gap: 0.75rem;
-        
+
         &:hover {
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 4px;
@@ -89,7 +89,7 @@
         background-color: var(--primary-color) !important;
         border: none;
         right: 0 !important;
-        left: auto !important;        
+        left: auto !important;
 
         .dropdown-item {
             color: white;
@@ -105,7 +105,7 @@
         .login-dropdown:hover {
             background-color: transparent;
         }
-    }    
+    }
 }
 
 /* ===== Footer ===== */
@@ -173,7 +173,8 @@
             text-align: center;
         }
 
-        .nav-link, .dropdown-toggle {
+        .nav-link,
+        .dropdown-toggle {
             justify-content: center !important;
             padding: 1rem !important;
         }

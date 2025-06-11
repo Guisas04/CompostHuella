@@ -25,8 +25,7 @@ export const Formacoes = (): string => {
                 ${Navbar()}
 
                 <main>
-                    
-                </main>
+<iframe src="https://www.google.com/maps/d/embed?mid=1R7doEOyz-zhHu0sGUM2sI7pT9CIxrvY&ehbc=2E312F" width="640" height="480"></iframe>                </main>
 
                 ${Footer()}
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
