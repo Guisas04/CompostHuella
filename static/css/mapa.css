@@ -1,0 +1,90 @@
+main {
+    margin-top: var(--nav-height);
+    width: 100%; 
+    height: 100vh; 
+    margin-top: 81px;
+}
+
+#map {
+    margin-top: 90px !important;
+    width: 90%; 
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+}
+
+a:focus, 
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+.leaflet-marker-icon:focus {
+    outline: 3px solid #97BF0D;
+    outline-offset: 2px;
+    z-index: 1000;
+}
+
+.leaflet-popup-content {
+    font-size: 1rem;
+}
+
+.popup-header h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.popup-content .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.status {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.operational {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.full {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.map-instructions {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 300px;
+    font-size: 0.9rem;
+}

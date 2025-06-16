@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Huella | UBI</title>
+  <link rel="icon" href="./assets/favicon.ico" sizes="any">
+  
+  <!-- Bootstrap 4.3.1 -->
+  <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossOrigin="anonymous" 
+  >
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/misc.css">
+</head>
+<body>
+  <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./homepage.html" aria-label="Home">
+        <img src="./assets/logo.svg" alt="Huella UBI - Logo">
+      </a>
+      
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#navbarNav"
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="./mapa.html">
+              <i class="fa-solid fa-map-location-dot mr-2" aria-hidden="true"></i>
+              Onde estamos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="./formacoes.html">
+              <i class="fa-solid fa-graduation-cap mr-2" aria-hidden="true"></i>
+              Formações
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="./informacoes.html">
+              <i class="fa-solid fa-question mr-2" aria-hidden="true"></i>
+              Informações
+            </a>
+          </li>
+          
+          <!-- Login Dropdown -->
+          <li class="nav-item dropdown" id="loginDropdown">
+            <a 
+              class="nav-link dropdown-toggle d-flex align-items-center" 
+              href="#" 
+              role="button" 
+              data-toggle="dropdown"
+              aria-expanded="false"
+              aria-haspopup="true"
+              id="loginDropdownButton"
+            >
+              <i class="fa-solid fa-right-to-bracket mr-2" aria-hidden="true"></i>
+              Login
+            </a>
+            <div class="dropdown-menu" aria-labelledby="loginDropdownButton">
+              <form class="px-3 py-2 dropdown-item login-dropdown">
+                <div class="form-group">
+                  <label for="exampleDropdownFormEmail1">Email address</label>
+                  <input 
+                    type="email" 
+                    class="form-control" 
+                    id="exampleDropdownFormEmail1" 
+                    placeholder="email@example.com"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleDropdownFormPassword1">Password</label>
+                  <input 
+                    type="password" 
+                    class="form-control" 
+                    id="exampleDropdownFormPassword1" 
+                    placeholder="Password"
+                    required
+                  />
+                </div>
+                <div class="form-check">
+                  <input 
+                    type="checkbox" 
+                    class="form-check-input" 
+                    id="dropdownCheck"
+                  />
+                  <label class="form-check-label" for="dropdownCheck">
+                    Remember me
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </form>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                Forgot password?
+              </a>
+            </div>
+          </li>
+
+          <!-- Account Dropdown -->
+          <li class="nav-item dropdown" id="accountDropdown">
+            <a 
+              class="nav-link dropdown-toggle d-flex align-items-center" 
+              href="#" 
+              role="button" 
+              data-toggle="dropdown"
+              aria-expanded="false"
+              aria-haspopup="true"
+              id="accountDropdownButton"
+            >
+              <i class="fa-regular fa-circle-user mr-2" aria-hidden="true"></i>
+              Conta
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="accountDropdownButton">
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-cog mr-2" aria-hidden="true"></i>Configurações
+              </a>
+              <a class="dropdown-item" href="./dashboard.html">
+                <i class="fas fa-chart-line mr-2" aria-hidden="true"></i>Dashboard
+              </a>
+              <a class="dropdown-item text-danger" href="#">
+                <i class="fas fa-sign-out-alt mr-2" aria-hidden="true"></i>Terminar Sessão
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Main Page -->
+  <main id="main-content" role="main">
+    <section class="hero-section">
+      <div class="fluid-container h-100 d-flex">
+        <header class="hero-content text-center mx-auto my-auto">
+          <h1>COMEÇA JÁ <br />A COMPOSTAR</h1>
+          <p>Reciclar resíduos orgânicos</p>
+          <a href="#form" class="btn">Aprende como</a>
+        </header>
+      </div>
+    </section>
+    <!-- HUELLA 2030 -->
+    <section class="angled-section first-section fluid-container d-flex">
+      <div class="angled-content fluid-container text-center d-flex flex-column flex-md-row">
+        <div class="fluid-container texto align-self-center text-md-left py-5 py-md-0">
+          <h2>HUELLA 2030</h2>
+          <p class="lead">
+            Um compostor <b>inteligente</b>, <br /> 
+            <b>comunitário</b> e <b>sustentável</b>
+          </p>
+        </div>
+        <div class="fluid-container img-bg d-flex">
+          <img 
+            class="img-compostor align-self-center mr-md-5" 
+            src="./assets/first-section-compostor.png" 
+            alt="Compostor inteligente Huella 2030" 
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Objetivos -->
+    <section class="angled-section second-section fluid-container d-flex">
+      <div class="angled-content fluid-container d-flex flex-column flex-md-row">
+        <div class="fluid-container img-bg d-flex align-items-center order-2 order-md-1">
+          <p>
+            Dimensão <b>ambiental</b> <br />
+            Dimensão <b>económica</b> <br />
+            Dimensão <b>tecnológica</b> <br />
+            Dimensão <b>socioeducativa</b> <br />
+            Dimensão <b>política</b>
+          </p>                        
+        </div>
+        <div class="fluid-container texto align-self-center text-center text-md-left order-1 order-md-2">
+          <h2><u>OBJETIVOS</u> SUSTENTÁVEIS</h2>
+        </div>
+      </div>
+    </section>
+    <!-- Registo -->
+    <section class="registration py-5 bg-huela" id="form">
+      <p>Junta-te a nós!</p>
+      <div class="container">
+        <form class="bg-white p-5 rounded shadow" aria-label="Formulário de subscrição">
+          <div class="mb-3">
+            <label for="email" class="form-label">
+              Email
+            </label>
+            <input 
+              type="email" 
+              class="form-control form-control-lg" 
+              id="email" 
+              aria-describedby="emailHelp" 
+              placeholder="exemplo@mail.com" 
+              required
+            />
+            <div id="emailHelp" class="form-text">Nunca partilharemos o seu email</div>
+          </div>
+          <button type="submit" class="btn btn-success btn-block">
+            Subscrever
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="footer-custom text-center">
+    <div class="fluid-container d-flex py-4 px-5">
+      <div class="texto-container d-flex">
+        <p class="align-self-center">Apenas possível com o apoio:</p>
+      </div>
+      <img 
+        src="./assets/huella-footer.png" 
+        alt="Huella - Apoiadores" 
+        class="huella-footer" 
+      />
+    </div>
+    <div class="fluid-container container-patrocinios">
+      <img 
+        src="./assets/patrocinios.png" 
+        alt="Patrocinadores do projeto Huella" 
+        class="patrocinios" 
+      />
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script 
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossOrigin="anonymous" 
+  ></script>
+  <script 
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" 
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+    crossOrigin="anonymous" 
+  ></script>
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" 
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+    crossOrigin="anonymous" 
+  ></script>
+  <script src="./js/login.js"></script>
+</body>
+</html>

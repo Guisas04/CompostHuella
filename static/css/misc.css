@@ -1,0 +1,203 @@
+:root {
+    --primary-color: #004F1C;
+    --secondary-color: #7C3B58;
+    --background-color: #f8f9fa;
+    --nav-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+@font-face {
+    font-family: 'Coolvetica-Bold';
+    src: url('../assets/Coolvetica-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar-toggler {
+    margin-right: 1rem;
+}
+
+
+.navbar-custom {
+    background: var(--primary-color) !important;
+    padding: 0;
+
+    & .navbar-brand img {
+        height: 55px;
+        width: auto;
+        margin: 0.5rem 0.5rem 0.5rem 1.6rem;
+    }
+
+    .navbar-nav {
+        margin-left: auto !important;
+        gap: 1rem;
+    }
+
+    .navbar-collapse {
+        justify-content: flex-end !important;
+    }
+
+    .nav-link {
+        color: white !important;
+        transition: var(--transition);
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+
+        i {
+            font-size: 1.1rem;
+        }
+    }
+
+    .d-flex {
+        margin-right: 1.6rem;
+    }
+
+    .btn {
+        color: white;
+        transition: var(--transition);
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+
+        i {
+            font-size: 1.1rem;
+        }
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .dropdown-menu {
+        background-color: var(--primary-color) !important;
+        border: none;
+        right: 0 !important;
+        left: auto !important;
+
+        .dropdown-item {
+            color: white;
+            padding: 0.8rem 1rem;
+            transition: var(--transition);
+            text-align: center;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        .login-dropdown:hover {
+            background-color: transparent;
+        }
+    }
+}
+
+.footer-custom {
+    background: var(--secondary-color);
+    color: white;
+    margin-top: auto;
+    padding-bottom: 5rem;
+    font-family: "Coolvetica-Bold", Arial, sans-serif;
+    font-size: clamp(1rem, 4vw, 3rem);
+    line-height: 1.2;
+
+    .fluid-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 0;
+    }
+
+    .texto-container {
+        flex: 1;
+        text-align: left;
+        margin-left: 5rem;
+    }
+
+    .huella-footer {
+        max-width: 40%;
+        height: auto;
+        margin-left: 2rem;
+    }
+
+    .container-patrocinios {
+        padding: 1rem 0;
+        background-color: white;
+    }
+
+    .patrocinios {
+        max-width: 90%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+    .navbar-custom {
+        .dropdown-menu {
+            position: static !important;
+            transform: none !important;
+            width: 100%;
+            margin-top: 0;
+            right: 0;
+            left: 0;
+            float: none;
+        }
+
+        .nav-item.dropdown {
+            position: static;
+        }
+
+        .navbar-nav {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .nav-link,
+        .dropdown-toggle {
+            justify-content: center !important;
+            padding: 1rem !important;
+        }
+
+        .dropdown-toggle::after {
+            display: inline-block;
+            margin-left: 0.5rem;
+        }
+    }
+
+    .footer-custom {
+        .fluid-container {
+            flex-direction: column;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .texto-container {
+            text-align: center;
+            margin-bottom: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .huella-footer {
+            max-width: 80%;
+            margin-left: 0;
+            order: 2;
+        }
+    }
+}
