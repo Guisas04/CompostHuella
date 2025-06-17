@@ -120,7 +120,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         duration: 0
                     }
                 }
-            }
+            },
+            maintainAspectRatio: false
         }
     });
 });

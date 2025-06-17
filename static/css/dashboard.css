@@ -86,3 +86,22 @@ table {
 th {
     text-align: left;
 }
+
+.chart-container {
+  position: relative;
+  height: 70vh;
+  margin-bottom: 10vh;
+}
+
+#wasteChart {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media (max-width: 992px) {
+    .chart-container {
+    position: relative;
+    height: 300px;
+    margin-bottom: 10vh;
+    }
+}
